@@ -223,12 +223,12 @@ function buildPayloadsBySeries(value, axisInfo) {
         var dist = Math.abs(diff);
         // Consider category case
         if (dist <= minDist) {
-            if (dist < minDist || (diff >= 0 && minDiff < 0)) {
-                minDist = dist;
-                minDiff = diff;
-                snapToValue = seriesNestestValue;
-                payloadBatch.length = 0;
-            }
+//             if (dist < minDist || (diff >= 0 && minDiff < 0)) {
+//                 minDist = dist;
+//                 minDiff = diff;
+//                 snapToValue = seriesNestestValue;
+//                 payloadBatch.length = 0;
+//             }
             each(dataIndices, function (dataIndex) {
                 payloadBatch.push({
                     seriesIndex: series.seriesIndex,
